@@ -1,0 +1,76 @@
+body {
+    background-image: radial-gradient(circle 1000px at center, #430658, #000000 100%);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 20px;
+}
+
+input {
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.App {
+    text-align: center;
+}
+
+.app-title{
+    margin-top: 3%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: #8e0909 1px 1px 0,
+                 #8e0909 2px 2px 0,
+                 #8e0909 3px 3px 0,
+                 #8e0909 4px 4px 0,
+                 #8e0909 5px 5px 0;
+}
+.text{
+    color: #ffffff;
+}
+.btn{
+    margin: 20px;
+    color: white;
+    border-radius: 12px;
+}
+
+.add-btn{
+    background: #ffffff;
+    width: 100px;
+    height: 40px;
+}
+
+textb{
+    color: #830987;
+    font-weight: 800;
+}
+.card {
+    width: 200px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: lightsteelblue;
+    border: bisque 3px solid;
+}
+.translate{
+    width: 200px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: lightsteelblue;
+    border: bisque 3px solid;
+}
+
+.overturned {
+    background-color: #ffffff;
+    border: #006fff 3px solid;
+}
+
+.container{
+    border: 5px solid #a621d5;
+    border-radius: 25px;
+    width: 50%;
+    min-width: 400px;
+    margin: 10px auto;
+    padding: 40px 20px;
+}
