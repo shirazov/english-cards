@@ -6,7 +6,7 @@ import VideoBg from './VideoBg'; // Импортируем компонент с
 ReactDOM.render(
   <React.StrictMode>
     <>
-      {/* <VideoBg /> */}
+      <VideoBg />
       <App />
     </>
   </React.StrictMode>,

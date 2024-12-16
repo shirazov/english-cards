@@ -95,13 +95,13 @@ position: relative; /* Это необходимо для правильного
     left: 0; /* Псевдоэлемент начнется с левого края */
     right: 0; /* Псевдоэлемент будет растянут до правого края */
     bottom: 0; /* Псевдоэлемент растянется до нижнего края */
-    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+    background: linear-gradient(71deg, #110e0e, #ffffff, #110e0e);
     z-index: -1; /* Размещает псевдоэлемент ниже содержимого контейнера */
     border-radius: 25px; /* Округляет углы псевдоэлемента, чтобы соответствовать контейнеру */
 
     position: absolute;
-    top: -2px;
-    bottom: -2px;
+    top: -1px;
+    bottom: -1px;
     left: -2px;
     right: -2px;
     content: "";
