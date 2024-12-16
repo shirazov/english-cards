@@ -1,9 +1,13 @@
+:root {
+    --theme-color: #feeaff; /* Определяем переменную цвета */
+}
+
 body {
-    background-image: radial-gradient(circle 1000px at center, #430658, #000000 100%);
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-size: 20px;
+    background-color: black;
 }
 
 input {
@@ -16,36 +20,35 @@ input {
     text-align: center;
 }
 
-.app-title{
+.app-title {
     margin-top: 3%;
     text-align: center;
     color: #ffffff;
     font-size: 50px;
-    text-shadow: #8e0909 1px 1px 0,
-                 #8e0909 2px 2px 0,
-                 #8e0909 3px 3px 0,
-                 #8e0909 4px 4px 0,
-                 #8e0909 5px 5px 0;
+    color: var(--theme-color); /* Используем переменную цвета */
 }
-.text{
+
+.text {
     color: #ffffff;
 }
-.btn{
+
+.btn {
     margin: 20px;
     color: white;
     border-radius: 12px;
 }
 
-.add-btn{
+.add-btn {
     background: #ffffff;
     width: 100px;
     height: 40px;
 }
 
-textb{
-    color: #830987;
+textb {
+    color: var(--theme-color); /* Используем переменную цвета */
     font-weight: 800;
 }
+
 .card {
     width: 200px;
     margin: 10px auto;
@@ -53,7 +56,8 @@ textb{
     background-color: lightsteelblue;
     border: bisque 3px solid;
 }
-.translate{
+
+.translate {
     width: 200px;
     margin: 10px auto;
     padding: 30px;
@@ -66,11 +70,82 @@ textb{
     border: #006fff 3px solid;
 }
 
-.container{
+.container {
     border: 5px solid #a621d5;
     border-radius: 25px;
     width: 50%;
     min-width: 400px;
     margin: 10px auto;
     padding: 40px 20px;
+
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+position: relative; /* Это необходимо для правильного позиционирования ::after */
+
+}
+
+.container::after {
+    content: ''; /* Обязательно для псевдоэлемента */
+    position: absolute; /* Позволяет управлять его позицией */
+    top: 0; /* Располагает псевдоэлемент в верхней части контейнера */
+    left: 0; /* Псевдоэлемент начнется с левого края */
+    right: 0; /* Псевдоэлемент будет растянут до правого края */
+    bottom: 0; /* Псевдоэлемент растянется до нижнего края */
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+    z-index: -1; /* Размещает псевдоэлемент ниже содержимого контейнера */
+    border-radius: 25px; /* Округляет углы псевдоэлемента, чтобы соответствовать контейнеру */
+
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+}
+
+.cardoverturned {
+
+    width: 200px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: rgb(0, 79, 182);
+    border: bisque 3px solid;
+
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+
+    position: relative; /* Это необходимо для правильного позиционирования ::after */
+    
+
+}
+
+.cardoverturned::after {
+    content: ''; /* Обязательно для псевдоэлемента */
+    position: absolute; /* Позволяет управлять его позицией */
+    top: 0; /* Располагает псевдоэлемент в верхней части контейнера */
+    left: 0; /* Псевдоэлемент начнется с левого края */
+    right: 0; /* Псевдоэлемент будет растянут до правого края */
+    bottom: 0; /* Псевдоэлемент растянется до нижнего края */
+    background: linear-gradient(71deg, #b21212, #00da57, #110e0e);
+    z-index: -1; /* Размещает псевдоэлемент ниже содержимого контейнера */
+    border-radius: 25px; /* Округляет углы псевдоэлемента, чтобы соответствовать контейнеру */
+
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
 }
