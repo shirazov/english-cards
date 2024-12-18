@@ -11,9 +11,9 @@ body {
 }
 
 input {
-    padding: 3px;
+    padding: 10px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .App {
@@ -35,17 +35,19 @@ input {
 .btn {
     margin: 20px;
     color: white;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .add-btn {
     background: #ffffff;
     width: 100px;
     height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 textb {
-    color: var(--theme-color);
+    color: #000000;
     font-weight: 800;
 }
 
@@ -71,7 +73,7 @@ textb {
 
     position: relative;
     border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background: #fff;
     background-clip: padding-box;
     border-radius: 45px;
     padding: 40px;
@@ -86,7 +88,7 @@ textb {
     left: 0; /* Псевдоэлемент начнется с левого края */
     right: 0; /* Псевдоэлемент будет растянут до правого края */
     bottom: 0; /* Псевдоэлемент растянется до нижнего края */
-    background: linear-gradient(71deg, #110e0e, #ffffff, #110e0e);
+    background: linear-gradient(71deg, #535353, #ffffff, #61ff52);
     z-index: -10;
     border-radius: 25px;
 
@@ -100,53 +102,39 @@ textb {
 }
 
 .card {
-    border-radius: 25px;
-    width: 30%;
-    min-width: 400px;
-    margin: 10px auto;
-    padding: 40px 20px;
-
-    position: relative;
-    border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #d090fb, #080509);
-    background-clip: padding-box;
-    border-radius: 45px;
-    padding: 40px;
-    position: relative; /* Это необходимо для правильного позиционирования ::after */
-
-    width: 200px;
+    width: 80%;
     margin: 10px auto;
     padding: 30px;
+    min-width: 400px;
 
-
-
-    position: relative;
     border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #171c1b, #080509);
+    background: rgb(14, 26, 25);
     background-clip: padding-box;
-    border-radius: 45px;
+    border-radius: 35px;
     padding: 40px;
-    position: relative; /* Это необходимо для правильного позиционирования ::after */ 
-    z-index: 2;
+
+    position: relative; /* Это необходимо для правильного позиционирования ::after */
+    color:#feeaff;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 
 
 .cardoverturned {
-    width: 30%;
+    width: 80%;
     margin: 10px auto;
     padding: 30px;
-    background-color: rgb(0, 79, 182);
-    border: bisque 3px solid;
+    min-width: 400px;
 
-    position: relative;
     border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background: rgb(91, 255, 241);
     background-clip: padding-box;
-    border-radius: 45px;
+    border-radius: 35px;
     padding: 40px;
 
     position: relative; /* Это необходимо для правильного позиционирования ::after */
-    
+    color:#000000;
 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }

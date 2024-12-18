@@ -51,7 +51,7 @@ turnCard(id) {
     render() {
         return (
             <div className="App">
-                <h1 className="app-title">Карточки для заучивания</h1>
+                <h1 className="app-title">КАРТОЧКИ ДЛЯ ЗАУЧИВАНИЯ</h1>
                 <text className="text">Добавление карточки</text>
                 <div className="container">
 
