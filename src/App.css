@@ -88,7 +88,7 @@ textb {
     left: 0; /* Псевдоэлемент начнется с левого края */
     right: 0; /* Псевдоэлемент будет растянут до правого края */
     bottom: 0; /* Псевдоэлемент растянется до нижнего края */
-    background: linear-gradient(71deg, #535353, #ffffff, #61ff52);
+    background: rgb(91, 255, 241);
     z-index: -10;
     border-radius: 25px;
 

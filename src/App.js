@@ -19,22 +19,31 @@ constructor(props) {
         [key] : value
     })
     }
-addCard() {
-    const newCard = {
-        id : 1 + this.state.id,
-        value : {
-            word: this.state.word.slice(),
-            translate: this.state.translate.slice(),
-            overturned: false
+    addCard() {
+        // Проверяем, заполнены ли оба поля
+        if (!this.state.word.trim() || !this.state.translate.trim()) {
+            return; // Если хотя бы одно из полей пустое, не добавляем карточку
         }
-    };
-    this.setState({
-        id : newCard.id,
-        word : "",
-        translate : "",
-        cards : [...this.state.cards, newCard]
-    })
-}
+    
+        // Создаём новую карточку
+        const newCard = {
+            id: 1 + this.state.id,
+            value: {
+                word: this.state.word.slice(),
+                translate: this.state.translate.slice(),
+                overturned: false
+            }
+        };
+    
+        // Обновляем состояние
+        this.setState({
+            id: newCard.id,
+            word: "",
+            translate: "",
+            cards: [...this.state.cards, newCard]
+        });
+    }
+    
 
 turnCard(id) {
     const cards = [...this.state.cards]
