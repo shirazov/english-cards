@@ -1,3 +1,5 @@
+![alt text](2024-12-19_04-30-09.png)
+
 # English Cards 🍓
 
 **English Cards** is a React-based web application designed to help users learn and memorize foreign words effectively. The app provides an engaging and interactive experience for language learners through customizable word cards and various learning modes.

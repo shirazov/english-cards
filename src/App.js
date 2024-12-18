@@ -64,6 +64,7 @@ turnCard(id) {
                 <text className="text">Добавление карточки</text>
                 <div className="container">
 
+                    <div className="menu">
                     <input
                         type="text"
                         placeholder="Введите слово"
@@ -82,6 +83,7 @@ turnCard(id) {
                     >
                       <textb>Добавить</textb>
                     </button>
+                    </div>
                     <div>
                         {this.state.cards.map(card =>{
                             return(

@@ -1,5 +1,5 @@
 :root {
-    --theme-color: #feeaff; /* Определяем переменную цвета */
+    --theme-color: #feeaff;
 }
 
 body {
@@ -12,8 +12,8 @@ body {
 
 input {
     padding: 10px;
-    margin: 10px;
     border-radius: 10px;
+    width: 30%;
 }
 
 .App {
@@ -21,9 +21,17 @@ input {
 }
 
 .app-title {
+    color: #F2F5FE;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Rajdhani', sans-serif;
+    background: -webkit-linear-gradient(transparent, transparent), url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat;
+    background-size: 200px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: background 10s infinite linear;
     margin-top: 3%;
     text-align: center;
-    color: #ffffff;
     font-size: 50px;
     color: var(--theme-color);
 }
@@ -33,18 +41,58 @@ input {
 }
 
 .btn {
-    margin: 20px;
     color: white;
     border-radius: 10px;
 }
 
 .add-btn {
     background: #ffffff;
-    width: 100px;
+    width: 130px;
     height: 40px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+
+@media (max-width: 1180px) {
+    .add-btn {
+        width: 18%;
+    }
+
+    input {
+        width: 28%;
+    }
+
+    .app-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    textb {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 880) {
+    textb {
+        font-size: 9px;
+    }
+
+    .app-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 750) {
+    textb {
+        font-size: 5px;
+    }
+
+    .app-title {
+        font-size: 16px;
+    }
+}
+
 
 textb {
     color: #000000;
@@ -77,23 +125,16 @@ textb {
     background-clip: padding-box;
     border-radius: 45px;
     padding: 40px;
-    position: relative; /* Это необходимо для правильного позиционирования ::after */
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
 .container::after {
-    content: ''; /* Обязательно для псевдоэлемента */
-    position: absolute; /* Позволяет управлять его позицией */
-    top: 0; /* Располагает псевдоэлемент в верхней части контейнера */
-    left: 0; /* Псевдоэлемент начнется с левого края */
-    right: 0; /* Псевдоэлемент будет растянут до правого края */
-    bottom: 0; /* Псевдоэлемент растянется до нижнего края */
-
-        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
-
-    z-index: -10;
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
     border-radius: 25px;
-
     top: -1px;
     bottom: -1px;
     left: -2px;
@@ -108,36 +149,54 @@ textb {
     width: 80%;
     margin: 10px auto;
     padding: 30px;
-    min-width: 400px;
-
+    min-width: 100px;
     border: 2px solid transparent;
     background: rgb(14, 26, 25);
     background-clip: padding-box;
     border-radius: 35px;
     padding: 40px;
-
-    position: relative; /* Это необходимо для правильного позиционирования ::after */
-    color:#feeaff;
-
+    position: relative;
+    color: #feeaff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-
 
 .cardoverturned {
     width: 80%;
     margin: 10px auto;
     padding: 30px;
-    min-width: 400px;
-
+    min-width: 100px;
     border: 2px solid transparent;
     background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
     background-clip: padding-box;
     border-radius: 35px;
     padding: 40px;
-
-    position: relative; /* Это необходимо для правильного позиционирования ::after */
-    color:#000000;
-
+    position: relative;
+    color: #000000;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.menu {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Rajdhani:700';
+
+body {
+    margin: 0;
+    background: #73CDE7;
+}
+
+@keyframes background {
+    from {
+        background-position: 0 0%;
+    }
+
+    to {
+        background-position: 0 -200px;
+    }
 }
