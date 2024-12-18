@@ -88,7 +88,9 @@ textb {
     left: 0; /* Псевдоэлемент начнется с левого края */
     right: 0; /* Псевдоэлемент будет растянут до правого края */
     bottom: 0; /* Псевдоэлемент растянется до нижнего края */
-    background: rgb(91, 255, 241);
+
+        background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+
     z-index: -10;
     border-radius: 25px;
 
@@ -99,6 +101,7 @@ textb {
     content: "";
     z-index: -1;
     border-radius: 45px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .card {
@@ -128,7 +131,7 @@ textb {
     min-width: 400px;
 
     border: 2px solid transparent;
-    background: rgb(91, 255, 241);
+    background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
     background-clip: padding-box;
     border-radius: 35px;
     padding: 40px;
